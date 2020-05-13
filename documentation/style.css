@@ -1,0 +1,347 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: .875rem;
+  font-family: 'Roboto', sans-serif;
+  background: black;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1;
+}
+
+p {
+  font-size: .875rem;
+  margin-bottom: .5rem;
+  line-height: 1.3rem;
+}
+
+h1 {
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+@media(max-width: 767px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.45rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: .9375rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+@media (max-width: 991px) {
+  .card-body {
+    padding: 1.875rem 1.25rem;
+  }
+}
+
+.grid-margin {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80%;
+}
+.CodeMirror {
+  font-size: .875rem;
+  height: auto;
+  text-align: left;
+  min-height: auto;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.40em;
+  padding: 10px;
+  font-weight: 100;
+  letter-spacing: .9px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.CodeMirror-scroll {
+  min-height: auto;
+}
+
+.documentation .left-sidebar {
+  width: 260px;
+  padding: 20px 30px;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  .documentation .left-sidebar {
+    padding: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .documentation .left-sidebar {
+    width: 16.66666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .documentation .left-sidebar {
+    width: 25%;
+  }
+}
+
+.documentation .left-sidebar .logo-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.documentation .left-sidebar .logo-wrapper img {
+  height: 24px;
+}
+
+.documentation .left-sidebar .left-menu-title {
+  margin-top: 1rem;
+}
+
+.documentation .left-sidebar .left-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.documentation .left-sidebar .left-menu li {
+  line-height: 2.2;
+  position: relative;
+}
+
+.documentation .left-sidebar .left-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding-left: 18px;
+}
+
+.documentation .left-sidebar .left-menu li a::before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid #d384f9;
+  position: absolute;
+  left: 0;
+  top: 11px;
+}
+
+.documentation .main-panel {
+  padding: 40px 50px;
+  margin-left: 0;
+}
+
+@media (max-width: 991px) {
+  .documentation .main-panel {
+    padding: 40px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .documentation .main-panel {
+    margin-left: 16.66666667%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .documentation .main-panel {
+    margin-left: 25%;
+  }
+}
+
+.credits .credit-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.credits .credit-list li {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.credits .credit-list li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.credits .credit-list li p {
+  margin-right: 8px;
+}
+
+.credits .credit-list li p::before {
+  content: '';
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid #d384f9;
+  position: absolute;
+  left: -17px;
+  top: 6px;
+}
+
+.card {
+  background-color: #191c24;
+}
+.table {
+  color: #ffffff;
+}
+
+
+/* Pws-tabs */
+
+.pws_tabs_container ul.pws_tabs_controll {
+	border-bottom: 1px solid #b66dff;
+}
+
+.pws_tabs_container ul.pws_tabs_controll li:first-child a {
+	border-radius: 5px 0px 0px 0px;
+}
+
+.pws_tabs_container ul.pws_tabs_controll li:last-child a {
+	border-right: 1px solid #b66dff;
+	border-radius: 0px 5px 0px 0px;
+}
+
+.pws_tabs_container ul.pws_tabs_controll li a {
+	border: 1px solid #b66dff;
+	border-bottom: none;
+	border-right: none;
+	background: #fff;
+	color: #b66dff;
+	padding: 0.6em 1.3em;
+	margin-right: 0;
+}
+
+.pws_tabs_container ul.pws_tabs_controll li a:hover {
+	background: #fff;
+	color: #b66dff;
+}
+
+.pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
+	background: -webkit-gradient(linear, left top, right top, from(#da8cff), to(#9a55ff));
+	background: linear-gradient(to right, #da8cff, #9a55ff);
+	color: #fff;
+}
+
+.pws_tabs_container .demo-tabs {
+	border: 1px solid #b66dff;
+	border-radius: 0px 5px 5px 5px;
+	overflow: hidden;
+	margin-bottom: 45px;
+	padding-top: 2rem;
+}
+
+.pws_tabs_container .demo-tabs .CodeMirror {
+	margin-bottom: 20px;
+}
+
+.pws_tabs_container.pws_tabs_vertical .pws_tabs_controll {
+	border-right: none;
+	border-bottom: none;
+}
+
+.pws_tabs_container.pws_tabs_vertical .pws_tabs_controll li:first-child a {
+	border-radius: 5px 0px 0px 0px;
+}
+
+.pws_tabs_container.pws_tabs_vertical .pws_tabs_controll li:last-child a {
+	border-bottom: 1px solid #b66dff;
+	border-radius: 0px 0px 0px 5px;
+	border-right: 0px;
+}
+
+.pws_tabs_container.pws_tabs_vertical .pws_tabs_controll li a {
+	border-radius: 0px;
+	border: 1px solid #b66dff;
+	border-right: none;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.pws_tabs_container.pws_tabs_horizontal_bottom .pws_tabs_list {
+	margin-bottom: 0;
+}
+
+.pws_tabs_list {
+  background: #000000;
+}
+
+.pws_tabs_container.pws_tabs_horizontal_bottom .pws_tabs_controll {
+	border-top: 1px solid #b66dff;
+	border-right: none;
+	border-bottom: none;
+}
+
+.pws_tabs_container.pws_tabs_horizontal_bottom .pws_tabs_controll li:first-child a {
+	border-radius: 0px 0px 0px 5px;
+}
+
+.pws_tabs_container.pws_tabs_horizontal_bottom .pws_tabs_controll li:last-child a {
+	border-radius: 0px 0px 5px 0px;
+	border-right: 1px solid #b66dff;
+}
+
+.pws_tabs_container.pws_tabs_horizontal_bottom .pws_tabs_controll li a {
+	border-radius: 0px;
+	border: 1px solid #b66dff;
+	border-top: none;
+	border-right: none;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.pws_tabs_container.pws_tabs_rtl .pws_tabs_controll li:first-child a {
+	border-radius: 0px 5px 0px 0px;
+	border-right: 1px solid #b66dff;
+}
+
+.pws_tabs_container.pws_tabs_rtl .pws_tabs_controll li:last-child a {
+	border-right: none;
+	border-radius: 5px 0px 0px 0px;
+}
+
+.pws_tabs_container.pws_tabs_rtl .pws_tabs_controll li a {
+	border: 1px solid #b66dff;
+	border-bottom: none;
+	border-right: none;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/* Pws-tabs end */
