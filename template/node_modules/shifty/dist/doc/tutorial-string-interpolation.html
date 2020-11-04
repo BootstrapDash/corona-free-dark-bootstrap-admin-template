@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>String Interpolation - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Tutorials</li><li class="nav-item"><a href="tutorial-easing-function-in-depth.html">Easing Curves in Depth</a></li><li class="nav-item"><a href="tutorial-getting-started.html">Getting Started</a></li><li class="nav-item"><a href="tutorial-string-interpolation.html">String Interpolation</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="shifty.Scene.html">Scene</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#add">add</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#empty">empty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#isPlaying">isPlaying</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#pause">pause</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#play">play</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#remove">remove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#resume">resume</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Scene.html#stop">stop</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="shifty.Scene.html#promises">promises</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="shifty.Scene.html#tweenables">tweenables</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="shifty.Tweenable.html">Tweenable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#.now">now</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#.setScheduleFunction">setScheduleFunction</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#cancel">cancel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#data">data</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#dispose">dispose</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#isPlaying">isPlaying</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#pause">pause</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#resume">resume</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#seek">seek</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#set">set</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#setConfig">setConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#setScheduleFunction">setScheduleFunction</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#stop">stop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.Tweenable.html#tween">tween</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="shifty.Tweenable.html#.filters">filters</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="shifty.Tweenable.html#.formulas">formulas</a></span></li><li class="nav-heading">Externals</li><li class="nav-heading"><span class="nav-item-type type-external">E</span><span class="nav-item-name"><a href="external-Promise.html">Promise</a></span></li><li class="nav-heading">Namespaces</li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="shifty.html">shifty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.html#.interpolate">interpolate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.html#.processTweens">processTweens</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.html#.setBezierFunction">setBezierFunction</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.html#.tween">tween</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="shifty.html#.unsetBezierFunction">unsetBezierFunction</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">String Interpolation</h1>
+    
+
+    <section>
+
+<header>
+    
+</header>
+
+<article>
+    <p>In addition to raw <code>Number</code>s, Shifty can tween numbers inside of strings.
+Among other things, this allows you to animate CSS properties. For example,
+you can do this:</p>
+<pre class="prettyprint source lang-js"><code>import { tween } from 'shifty'
+
+tween({
+  from: { transform: 'translateX(45px)' },
+  to: { transform: 'translateX(90xp)' },
+})
+</code></pre>
+<p><code>translateX(45)</code> will be tweened to <code>translateX(90)</code>. To demonstrate:</p>
+<p data-height="273" data-theme-id="0" data-slug-hash="PKgKqb" data-default-tab="js,result" data-user="jeremyckahn" data-embed-version="2" data-pen-title="Shifty - Basic string interpolation demo" class="codepen">See the Pen <a href="https://codepen.io/jeremyckahn/pen/PKgKqb/">Shifty - Basic string interpolation demo</a> by Jeremy Kahn (<a href="https://codepen.io/jeremyckahn">@jeremyckahn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p>Another use for this is animating colors:</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="wqZqWe" data-default-tab="js,result" data-user="jeremyckahn" data-embed-version="2" data-pen-title="Shifty - Basic string interpolation demo" class="codepen">See the Pen <a href="https://codepen.io/jeremyckahn/pen/wqZqWe/">Shifty - Basic string interpolation demo</a> by Jeremy Kahn (<a href="https://codepen.io/jeremyckahn">@jeremyckahn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p>Shifty also supports hexadecimal colors, in both long (<code>#ff00ff</code>) and short
+(<code>#f0f</code>) forms. Be aware that hexadecimal input values will be converted into
+the equivalent RGB output values. This is done to optimize for performance.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="dzLzOo" data-default-tab="js,result" data-user="jeremyckahn" data-embed-version="2" data-pen-title="Shifty - Hex color string interpolation demo" class="codepen">See the Pen <a href="https://codepen.io/jeremyckahn/pen/dzLzOo/">Shifty - Hex color string interpolation demo</a> by Jeremy Kahn (<a href="https://codepen.io/jeremyckahn">@jeremyckahn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<h2>Easing support</h2>
+<p>Easing works somewhat differently with string interpolation. This is because
+some CSS properties have multiple values in them, and you might need to tween
+each value along its own easing curve. A basic example:</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="OjGjpm" data-default-tab="js,result" data-user="jeremyckahn" data-embed-version="2" data-pen-title="Shifty - String interpolation with single ease demo" class="codepen">See the Pen <a href="https://codepen.io/jeremyckahn/pen/OjGjpm/">Shifty - String interpolation with single ease demo</a> by Jeremy Kahn (<a href="https://codepen.io/jeremyckahn">@jeremyckahn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p>In this case, the values for <code>translateX</code> and <code>translateY</code> are always the same
+for each tick of the tween, because they have the same start and end points and
+both use the same easing curve. We can also tween <code>translateX</code> and
+<code>translateY</code> along independent curves:</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="xLeLdv" data-default-tab="js,result" data-user="jeremyckahn" data-embed-version="2" data-pen-title="Shifty - String interpolation with multiple eases demo" class="codepen">See the Pen <a href="https://codepen.io/jeremyckahn/pen/xLeLdv/">Shifty - String interpolation with multiple eases demo</a> by Jeremy Kahn (<a href="https://codepen.io/jeremyckahn">@jeremyckahn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p><code>translateX</code> and <code>translateY</code> are not in sync anymore, because <code>easeInQuad</code> was
+specified for <code>translateX</code> and <code>bounce</code> for <code>translateY</code>. Mixing and matching
+easing curves can make for some interesting motion in your animations!</p>
+<p>The order of the space-separated easing curves correspond the number values
+they apply to. If there are more number values than easing curves listed, the
+last easing curve listed is used for the remaining numbers.</p>
+<p data-height="438" data-theme-id="0" data-slug-hash="dzLwQX" data-default-tab="js,result" data-user="jeremyckahn" data-embed-version="2" data-pen-title="Shifty - Basic CSS animation" class="codepen">See the Pen <a href="https://codepen.io/jeremyckahn/pen/dzLwQX/">Shifty - Basic CSS animation</a> by Jeremy Kahn (<a href="https://codepen.io/jeremyckahn">@jeremyckahn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<h2>A word on performance</h2>
+<p>Shifty's string interpolation is powerful because it is fully abstract — that
+is, it can handle just about any kind of string format. However, that
+abstraction comes at a performance cost. In many cases this cost is
+insignificant, but if Shifty is playing many animations simultaneously, you may
+see some slowdown. If you experience performance issues when animating strings,
+consider finding an alternative solution that relies solely on raw numbers. For
+instance, if your animation looks like this:</p>
+<pre class="prettyprint source lang-js"><code>const div = document.querySelector('div')
+
+shifty.tween({
+  from: { transform: 'translateX(0px) translateY(0px)' },
+  to: { transform: 'translateX(100px) translateY(100px)' },
+  easing: { transform: 'easeInQuad' },
+  render: ({ transform }) => (div.style.transform = transform),
+})
+</code></pre>
+<p>You might rewrite it without strings like this for better performance:</p>
+<pre class="prettyprint source lang-js"><code>const div = document.querySelector('div')
+
+shifty.tween({
+  from: { x: 0, y: 0 },
+  to: { x: 100, y: 100 },
+  easing: { transform: 'easeInQuad' },
+  render: ({ x, y }) =>
+    (div.style.transform = `translateX(${x}px) translateY(${y}px)`),
+})
+</code></pre>
+</article>
+
+</section>
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a> on Sat Oct 03 2020 23:22:49 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
