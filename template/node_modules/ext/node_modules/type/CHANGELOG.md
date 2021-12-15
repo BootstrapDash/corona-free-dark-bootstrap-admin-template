@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/medikoo/type/compare/v2.4.0...v2.5.0) (2021-03-08)
+
+### Features
+
+- `errorCode` option for `ensure*` utils ([777a1f2](https://github.com/medikoo/type/commit/777a1f2c9fd76defcd24d3a30cce49491947fef7))
+
+## [2.4.0](https://github.com/medikoo/type/compare/v2.3.0...v2.4.0) (2021-03-08)
+
+### Features
+
+- `set/is` and `set/ensure` utils ([083ec23](https://github.com/medikoo/type/commit/083ec2351718c310f316dcfd8c624a13201e227f))
+
+## [2.3.0](https://github.com/medikoo/type/compare/v2.2.0...v2.3.0) (2021-02-16)
+
+### Features
+
+- `map/is` and `map/ensure` utils ([aafd1cb](https://github.com/medikoo/type/commit/aafd1cbd8c888fda98d39fd17e59f38b078d7bcf))
+
+## [2.2.0](https://github.com/medikoo/type/compare/v2.1.0...v2.2.0) (2021-02-11)
+
+### Features
+
+- Support `ensureItem` option in `array/ensure` ([8f74973](https://github.com/medikoo/type/commit/8f749739df9bfebf44087093e09c8f7341a33a09))
+
 ## [2.1.0](https://github.com/medikoo/type/compare/v2.0.0...v2.1.0) (2020-08-21)
 
 ### Features

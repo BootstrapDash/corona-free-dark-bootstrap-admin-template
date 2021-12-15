@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: calc(50% - 10px);
-    background-color: rgba(theme-color(success), .7);
+    background-color: rgba($success, .7);
     animation: squaremove 1s ease-in-out infinite;
   }
   

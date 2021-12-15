@@ -18,33 +18,63 @@ $darkslategray : #2e383e;
 $dodger-blue : #3498db;
 
 
-$colors: (blue: $blue,
-indigo: $indigo,
-purple: $purple,
-pink: $pink,
-red: $red,
-orange: $orange,
-yellow: $yellow,
-green: $green,
-teal: $teal,
-cyan: $cyan,
-white: $white,
-gray: #434a54,
-gray-light: #aab2bd,
-gray-lighter: #e8eff4,
-gray-lightest: #e6e9ed,
-gray-dark: #12151e,
-black: #000000);
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: #434a54,
+  gray-light: #aab2bd,
+  gray-lighter: #e8eff4,
+  gray-lightest: #e6e9ed,
+  gray-dark: #12151e,
+  black: #000000
+);
 
+$blue: $blue;
+$indigo: $indigo;
+$purple: $purple;
+$pink: $pink;
+$red: $red;
+$orange: $orange;
+$yellow: $yellow;
+$green: $green;
+$teal: $teal;
+$cyan: $cyan;
+$white: $white;
+$gray: #434a54;
+$gray-light: #aab2bd;
+$gray-lighter: #e8eff4;
+$gray-lightest: #e6e9ed;
+$gray-dark: #12151e;
+$black: #000000;
 
-$theme-colors: (primary: #0090e7,
-secondary: #e4eaec,
-success: #00d25b,
-info:  #8f5fe8,
-warning: #ffab00,
-danger: #fc424a,
-light: $white,
-dark: #0d0d0d);
+$theme-colors: (
+  primary: #0090e7,
+  secondary: #e4eaec,
+  success: #00d25b,
+  info:  #8f5fe8,
+  warning: #ffab00,
+  danger: #fc424a,
+  light: $white,
+  dark: #0d0d0d
+  );
+
+  $primary: #0090e7;
+  $secondary: #e4eaec;
+  $success: #00d25b;
+  $info:  #8f5fe8;
+  $warning: #ffab00;
+  $danger: #fc424a;
+  $light: $white;
+  $dark: #0d0d0d;
 
 
 
@@ -99,7 +129,7 @@ $card-title-color: #ffffff;
 
 //////// TABLES ////////
 $table-color: $body-color;
-$table-accent-bg: $content-bg;
+$table-accent-bg: transparent;
 $table-hover-bg: $content-bg;
 $table-cell-padding: .9375rem;
 $table-border-color: $border-color;
@@ -213,7 +243,7 @@ $tooltip-padding-y: .4rem;
 $tooltip-padding-x: .75rem;
 $tooltip-border-radius: .375rem;
 ////////// TOOLTIP VARIABLES //////////
-$popover-bg: theme-color(dark);
+$popover-bg: $dark;
 $popover-border-color: $border-color;
 $popover-arrow-color: $popover-bg;
 $popover-arrow-outer-color: $popover-border-color;
@@ -366,5 +396,6 @@ $fullcalendar-color: #a8b2b9;
 $page-title-color: $body-color;
 ////////   MISC  //////////////
 
+$buy-nowbanner-padding-top:60px;
 
 

@@ -50,7 +50,7 @@
                     <button type="submit" class="btn btn-primary btn-block enter-btn">Login</button>
                   </div>
                   <div class="d-flex">
-                    <button class="btn btn-facebook col mr-2">
+                    <button class="btn btn-facebook col me-2">
                       <i class="mdi mdi-facebook"></i> Facebook </button>
                     <button class="btn btn-google col">
                       <i class="mdi mdi-google-plus"></i> Google plus </button>

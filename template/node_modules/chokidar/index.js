@@ -48,7 +48,8 @@ const {
   EMPTY_FN,
 
   isWindows,
-  isMacos
+  isMacos,
+  isIBMi
 } = require('./lib/constants');
 
 const stat = promisify(fs.stat);
@@ -328,6 +329,11 @@ constructor(_opts) {
   // Other platforms use non-polling fs_watch.
   if (undef(opts, 'usePolling') && !opts.useFsEvents) {
     opts.usePolling = isMacos;
+  }
+
+  // Always default to polling on IBM i because fs.watch() is not available on IBM i.
+  if(isIBMi) {
+    opts.usePolling = true;
   }
 
   // Global override (useful for end-developers that need to force polling for all
@@ -863,6 +869,15 @@ _remove(directory, item, isDirectory) {
   const parent = this._getWatchedDir(directory);
   const wasTracked = parent.has(item);
   parent.remove(item);
+
+  // Fixes issue #1042 -> Relative paths were detected and added as symlinks
+  // (https://github.com/paulmillr/chokidar/blob/e1753ddbc9571bdc33b4a4af172d52cb6e611c10/lib/nodefs-handler.js#L612),
+  // but never removed from the map in case the path was deleted.
+  // This leads to an incorrect state if the path was recreated:
+  // https://github.com/paulmillr/chokidar/blob/e1753ddbc9571bdc33b4a4af172d52cb6e611c10/lib/nodefs-handler.js#L553
+  if (this._symlinkPaths.has(fullPath)) {
+    this._symlinkPaths.delete(fullPath);
+  }
 
   // If we wait for this file to be fully written, cancel the wait.
   let relPath = path;

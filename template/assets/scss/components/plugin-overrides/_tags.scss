@@ -4,7 +4,7 @@ div.tagsinput {
   padding: 15px 15px 10px;
   border-color: $border-color;
   span.tag {
-    background: theme-color(primary);
+    background: $primary;
     border: 0;
     color: color(white);
     padding: 6px 14px;

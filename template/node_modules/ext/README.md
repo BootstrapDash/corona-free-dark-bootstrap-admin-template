@@ -24,7 +24,10 @@ npm install ext
   - [`floor10`](docs/math/floor-10.md)
   - [`round10`](docs/math/round-10.md)
 - `Object`
+  - [`clear`](docs/object/clear.md)
   - [`entries`](docs/object/entries.md)
+- `Promise`
+  - [`limit`](docs/promise/limit.md)
 - `String`
   - [`random`](docs/string/random.md)
 - `String.prototype`

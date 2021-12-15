@@ -9,5 +9,7 @@ module.exports = function (value, defaultMessage, inputOptions) {
 		if (inputOptions.isOptional) return null;
 	}
 	var ErrorConstructor = (inputOptions && inputOptions.Error) || TypeError;
-	throw new ErrorConstructor(resolveErrorMessage(defaultMessage, value, inputOptions));
+	var error = new ErrorConstructor(resolveErrorMessage(defaultMessage, value, inputOptions));
+	if (inputOptions && inputOptions.errorCode) error.code = inputOptions.errorCode;
+	throw error;
 };

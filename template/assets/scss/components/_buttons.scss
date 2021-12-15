@@ -66,7 +66,7 @@
 .btn-toolbar {
   .btn-group {
     +.btn-group {
-      @extend .ml-2;
+      @extend .ms-2;
     }
   }
 }

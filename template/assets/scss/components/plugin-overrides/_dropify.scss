@@ -35,7 +35,7 @@
 			background: rgba(255,255,255,.9);
 			.dropify-infos-inner{
 				.dropify-filename{
-					color: theme-color(primary);
+					color: $primary;
 					font-size: 20px;
 					font-weight: 400;
 				}

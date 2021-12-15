@@ -19,7 +19,7 @@
 				left: 50%;
 				top: 0;
 				margin: 0 0 0 -.1em;
-				background: theme-color(success);
+				background: $success;
 				-webkit-transform-origin: 50% 250%;
 				transform-origin: 50% 250%;
 				-webkit-animation: 
@@ -33,7 +33,7 @@
 				top: 50%; 
 				right: 0;
 				margin: -.1em 0 0 0;
-				background: theme-color(danger);
+				background: $danger;
 				-webkit-transform-origin: -150% 50%;
 				transform-origin: -150% 50%;
 				-webkit-animation: 
@@ -47,7 +47,7 @@
 				left: 50%; 
 				bottom: 0;
 				margin: 0 0 0 -.1em;
-				background: theme-color(warning);
+				background: $warning;
 				-webkit-transform-origin: 50% -150%;
 				transform-origin: 50% -150%;
 				-webkit-animation: 
@@ -61,7 +61,7 @@
 				top: 50%; 
 				left: 0;
 				margin: -.1em 0 0 0;
-				background: theme-color(primary);
+				background: $primary;
 				-webkit-transform-origin: 250% 50%;
 				transform-origin: 250% 50%;
 				-webkit-animation: 

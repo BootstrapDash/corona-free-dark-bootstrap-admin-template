@@ -39,15 +39,15 @@
     }
 
     a[data-wysihtml-command-value="red"] {
-        color: theme-color(danger);
+        color: $danger;
     }
 
     a[data-wysihtml-command-value="green"] {
-        color: theme-color(success);
+        color: $success;
     }
 
     a[data-wysihtml-command-value="blue"] {
-        color: theme-color(info);
+        color: $info;
     }
 
     .wysihtml-editor,
@@ -82,7 +82,7 @@
         border: 1px solid $border-color;
         padding: 0 0.2em;
         margin: 1px 0;
-        color: theme-color(primary);
+        color: $primary;
     }
 
     .toolbar .wysihtml-action-active,
@@ -111,7 +111,7 @@
     }
 
     .wysihtml-editor table td.wysiwyg-tmp-selected-cell {
-        outline: 2px solid theme-color(success);
+        outline: 2px solid $success;
     }
 
     .editor-container-tag {

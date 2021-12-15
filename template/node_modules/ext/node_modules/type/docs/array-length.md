@@ -23,5 +23,5 @@ Otherwise `TypeError` is thrown.
 const ensureArrayLength = require("type/array-length/ensure");
 
 ensureArrayLength(12.93); // "12"
-ensureArrayLength(9007199254740992); // Thrown TypeError: null is not a valid array length
+ensureArrayLength(9007199254740992); // Thrown TypeError: 9007199254740992 is not a valid array length
 ```

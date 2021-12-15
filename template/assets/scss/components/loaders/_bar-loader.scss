@@ -11,7 +11,7 @@
   display: inline-block;
   width: 5px;
   height: 30px;
-  background-color: rgba(theme-color(danger), .7);
+  background-color: rgba($danger, .7);
 }
 
 .bar-loader span:nth-child(1){

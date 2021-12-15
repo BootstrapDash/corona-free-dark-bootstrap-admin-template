@@ -12,7 +12,7 @@
     }
   }
   .ajax-file-upload {
-    background: theme-color(info);
+    background: $info;
     box-shadow: none;
     height: auto;
     @extend .btn;

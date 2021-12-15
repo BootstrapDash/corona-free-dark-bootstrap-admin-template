@@ -23,7 +23,7 @@
       width: 55px;
     }
     .navbar-brand {
-      color: lighten(color(gray-dark), 20%);
+      color: lighten($gray-dark, 20%);
       font-size: 1.5rem;
       line-height: 48px;
       margin-right: 0;
@@ -33,7 +33,7 @@
       &:active,
       &:focus,
       &:hover {
-        color: lighten(color(gray-dark), 10%);
+        color: lighten($gray-dark, 10%);
       }
 
       img {
@@ -81,6 +81,9 @@
       border: 0;
       color: $text-muted;
       height: $navbar-height;
+      &:focus {
+        box-shadow: none
+      }
       @include border-radius(0px);
       &:not(.navbar-toggler-right) {
         font-size: 0.875rem;
@@ -117,8 +120,8 @@
         }
       }
       .rtl & {
-        @extend .ml-0;
-        @extend .mr-4;
+        @extend .ms-0;
+        @extend .me-4;
       }
     }
     .count-indicator {
@@ -199,7 +202,7 @@
           line-height: 1rem;
           .dropdown-toggle {
             &:after {
-              color: theme-color(primary);
+              color: $primary;
               font-size: 1rem;
             }
           }
@@ -242,7 +245,7 @@
                 }
                 .rtl & {
                   i{
-                    @extend .mr-0;
+                    @extend .me-0;
                     margin-left: 10px;
                   }
                 }
@@ -283,13 +286,13 @@
                 bottom: 5px;
                 right: -5px;
                 &.online {
-                  background: theme-color(success);
+                  background: $success;
                 }
                 &.offline {
-                  background: theme-color(danger);
+                  background: $danger;
                 }
                 &.busy {
-                  background: theme-color(warning);
+                  background: $warning;
                 }
               }
             }

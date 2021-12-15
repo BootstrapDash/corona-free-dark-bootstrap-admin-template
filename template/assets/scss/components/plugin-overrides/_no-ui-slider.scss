@@ -49,12 +49,12 @@
     border: none;
 
     .noUi-connect {
-      background: theme-color(primary);
+      background: $primary;
       box-shadow: none;
     }
 
     .noUi-origin {
-      background: theme-color(success);
+      background: $success;
     }
   }
 

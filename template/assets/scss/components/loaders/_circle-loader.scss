@@ -15,7 +15,7 @@
     height: 100%;
     border-radius: 100%;
     border: 10px solid transparent;
-    border-top-color: theme-color(warning);
+    border-top-color: $warning;
   }
   
   .circle-loader:before{
@@ -24,7 +24,7 @@
   }
   
   .circle-loader:after{
-    border: 10px solid theme-color(secondary);
+    border: 10px solid $secondary;
   }
   
   @keyframes spin{

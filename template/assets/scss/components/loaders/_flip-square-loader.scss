@@ -19,7 +19,7 @@
     top: 25px;
     width: 50px;
     height: 50px;
-    background-color: rgba(theme-color(success), .7);
+    background-color: rgba($success, .7);
     animation: flip 1s infinite;
   }
   

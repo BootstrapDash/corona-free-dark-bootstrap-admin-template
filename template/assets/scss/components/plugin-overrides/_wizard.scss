@@ -105,7 +105,7 @@
                 
 
                 &:active {
-                    background: theme-color(primary);
+                    background: $primary;
                     color: color(white);
                     cursor: default;
                 }
@@ -114,16 +114,16 @@
 
         .done {
             a {
-                background: lighten(theme-color(primary), 20%);
+                background: lighten($primary, 20%);
                 color: color(white);
 
                 &:hover {
-                    background: lighten(theme-color(primary), 20%);
+                    background: lighten($primary, 20%);
                     color: color(white);
                 }
 
                 &:active {
-                    background: lighten(theme-color(primary), 20%);
+                    background: lighten($primary, 20%);
                     color: color(white);
                 }
             }
@@ -131,16 +131,16 @@
 
         .error {
             a {
-                background: theme-color(danger);
+                background: $danger;
                 color: #fff;
 
                 &:hover {
-                    background: theme-color(danger);
+                    background: $danger;
                     color: #fff;
                 }
 
                 &:active {
-                    background: theme-color(danger);
+                    background: $danger;
                     color: #fff;
                 }
             }
@@ -197,7 +197,7 @@
             input.error {
                 background: rgb(251, 227, 228);
                 border: 1px solid lighten(theme-color(danger), 20%);
-                color: theme-color(danger);
+                color: $danger;
             }
 
             label {
@@ -206,7 +206,7 @@
             }
 
             label.error {
-                color: theme-color(danger);
+                color: $danger;
                 display: inline-block;
                 margin-left: 1.5em;
             }

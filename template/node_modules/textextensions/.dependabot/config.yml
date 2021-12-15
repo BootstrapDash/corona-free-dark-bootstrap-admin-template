@@ -2,7 +2,10 @@ version: 1
 update_configs:
   - package_manager: javascript
     directory: /
-    update_schedule: daily
+    update_schedule: weekly
+    allowed_updates:
+      - match:
+          update_type: security
     automerged_updates:
       - match:
           dependency_type: all

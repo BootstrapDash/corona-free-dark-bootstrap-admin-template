@@ -17,7 +17,7 @@
       border-bottom: $border-property;
       padding: 15px 10px;
       h5{
-        color: theme-color("primary");
+        color: $primary;
       }
       p{
         color: color(gray-light);

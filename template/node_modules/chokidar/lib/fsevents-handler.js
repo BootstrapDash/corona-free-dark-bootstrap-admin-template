@@ -104,7 +104,8 @@ const createFSEventsInstance = (path, callback) => {
  * @returns {Function} closer
  */
 function setFSEventsListener(path, realPath, listener, rawEmitter) {
-  let watchPath = sysPath.extname(path) ? sysPath.dirname(path) : path;
+  let watchPath = sysPath.extname(realPath) ? sysPath.dirname(realPath) : realPath;
+
   const parentPath = sysPath.dirname(watchPath);
   let cont = FSEventsWatchers.get(watchPath);
 
@@ -299,8 +300,7 @@ handleEvent(event, path, fullPath, realPath, parent, watchedDir, item, info, opt
  * @returns {Function} closer for the watcher instance
 */
 _watchWithFsEvents(watchPath, realPath, transform, globFilter) {
-  if (this.fsw.closed) return;
-  if (this.fsw._isIgnored(watchPath)) return;
+  if (this.fsw.closed || this.fsw._isIgnored(watchPath)) return;
   const opts = this.fsw.options;
   const watchCallback = async (fullPath, flags, info) => {
     if (this.fsw.closed) return;

@@ -68,7 +68,7 @@
 								content: "";
 								width: 38px;
 								height: 38px;
-								background: theme-color(success);
+								background: $success;
 								@include border-radius(100%);
 								display: block;
 								margin: auto;
@@ -89,7 +89,7 @@
 								content: "";
 								width: 38px;
 								height: 38px;
-								background: theme-color(info);
+								background: $info;
 								@include border-radius(100%);
 								display: block;
 								margin: auto;
@@ -174,7 +174,7 @@
 					padding-top:0.5rem;
 				}
 				&.datepicker-switch{
-					color: theme-color(primary);
+					color: $primary;
 					padding-bottom:0.5rem;
 					padding-top:0.5rem;
 				}
@@ -214,13 +214,13 @@
 								&.day {
 									&.today {
 										&:before {
-											background-color: theme-color(success);
+											background-color: $success;
 											top: 6px;
 										}
 									}
 									&.active {
 										&:before {
-											background-color: theme-color(warning);
+											background-color: $warning;
 											top: 6px;
 										}
 									}
@@ -267,7 +267,7 @@
 				.table-condensed {
 					height: 100%;
 					thead {
-						background: theme-color(success);
+						background: $success;
 						tr {
 							th {
 								&.next,

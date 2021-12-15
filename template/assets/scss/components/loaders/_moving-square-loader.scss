@@ -14,7 +14,7 @@
     height: 10px;
     top: calc(50% - 10px);
     left: 0px;
-    background-color: rgba(theme-color(danger), .7);
+    background-color: rgba($danger, .7);
     animation: rotatemove 1s infinite;
   }
   

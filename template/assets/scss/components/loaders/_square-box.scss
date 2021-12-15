@@ -26,7 +26,7 @@ position: absolute;
   display: block;
   width: $square-size;
   height: $square-size;
-  background: theme-color(primary);
+  background: $primary;
 }
   
 
@@ -49,7 +49,7 @@ position: absolute;
 	position: absolute;
   width: $square-corner-size;
   height: $square-corner-size;
-  color: theme-color(primary);
+  color: $primary;
   content: '';
 }
   

@@ -158,12 +158,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  // SSL options for Node.js client
-	  this.pfx = opts.pfx || null;
-	  this.key = opts.key || null;
-	  this.passphrase = opts.passphrase || null;
-	  this.cert = opts.cert || null;
-	  this.ca = opts.ca || null;
-	  this.ciphers = opts.ciphers || null;
+	  this.pfx = opts.pfx || undefined;
+	  this.key = opts.key || undefined;
+	  this.passphrase = opts.passphrase || undefined;
+	  this.cert = opts.cert || undefined;
+	  this.ca = opts.ca || undefined;
+	  this.ciphers = opts.ciphers || undefined;
 	  this.rejectUnauthorized = opts.rejectUnauthorized === undefined ? true : opts.rejectUnauthorized;
 	  this.forceNode = !!opts.forceNode;
 
@@ -1521,7 +1521,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  debug('polling got data %s', data);
 	  var callback = function (packet, index, total) {
 	    // if its the first message we consider the transport open
-	    if ('opening' === self.readyState) {
+	    if ('opening' === self.readyState && packet.type === 'open') {
 	      self.onOpen();
 	    }
 

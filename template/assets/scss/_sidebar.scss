@@ -24,7 +24,7 @@
       width: 55px;
     }
     .sidebar-brand {
-      color: lighten(color(gray-dark), 20%);
+      color: lighten($gray-dark, 20%);
       font-size: 1.5rem;
       line-height: 48px;
       margin-right: 0;
@@ -34,7 +34,7 @@
       &:active,
       &:focus,
       &:hover {
-        color: lighten(color(gray-dark), 10%);
+        color: lighten($gray-dark, 10%);
       }
 
       img {
@@ -140,7 +140,7 @@
             content: "";
             width: 3px;
             height: 100%;
-            background: theme-color(primary);
+            background: $primary;
             display: inline-block;
             position: absolute;
             left: 0;
@@ -378,7 +378,7 @@
           .nav-link {
             .menu-icon {
               i {
-                color: theme-color(primary);
+                color: $primary;
               }
             }
           }
@@ -388,7 +388,7 @@
           .nav-link {
             .menu-icon {
               i {
-                color: theme-color(success);
+                color: $success;
               }
             }
           }
@@ -398,7 +398,7 @@
           .nav-link {
             .menu-icon {
               i {
-                color: theme-color(info);
+                color: $info;
               }
             }
           }
@@ -408,7 +408,7 @@
           .nav-link {
             .menu-icon {
               i {
-                color: theme-color(warning);
+                color: $warning;
               }
             }
           }
@@ -418,7 +418,7 @@
           .nav-link {
             .menu-icon {
               i {
-                color: theme-color(danger);
+                color: $danger;
               }
             }
           }

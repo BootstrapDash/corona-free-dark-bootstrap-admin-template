@@ -53,11 +53,11 @@
   &:hover {
     cursor: pointer;
     color: color(white);
-    background-color: theme-color(primary);
+    background-color: $primary;
   }
   .tt-cursor {
     color: color(white);
-    background-color: theme-color(primary);
+    background-color: $primary;
   }
   p {
     margin: 0;
