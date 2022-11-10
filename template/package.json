@@ -43,7 +43,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-util": "^3.0.8",
     "merge-stream": "^2.0.0",
-    "minimatch": "^3.0.4",
+    "minimatch": "^3.0.5",
     "require-dir": "^1.2.0",
     "run-sequence": "^2.2.1"
   },
